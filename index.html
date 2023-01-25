@@ -1,15 +1,35 @@
-<html>
-    <head>
- </head>
+
+</html>
+<html
+></html>
+    
  <style>
     body{
+      background-color: black;
         font-family: latha;
         color:white;
         background:url(food.jpg)no-repeat;
         background-size: cover;
     }
 
-    
+    .box{width: 900px;
+        float: right;
+        border: 1px solid black;
+    }
+
+        .box ul li{
+            width: 130px;
+            float:left;
+            margin: 10px;
+            text-align:center;
+
+        }
+        .box ul li a{text-decoration: none;
+            color:orange;    }
+
+            .box ul li:hoover{ background-color:green;}
+            .box ul li a:hover{ color:goldenrod;
+            }
 .wd {
     width: 300px;
     height: 539px;
@@ -26,6 +46,60 @@ font-weight: 100px;
 color: orange;
 
 }
+.opt 
+{
+  align-items: center;
+}
+/* CSS */
+.button-64 {
+  margin-left: 55px;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
 .wd h4{
     text-align: justify;
     color: darkgray;
@@ -40,15 +114,8 @@ color: orange;
     
     
     }       
-.opt form ,input[type="button"] {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    margin: 14px auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
-}
+
+
 .social-links {
   display: flex;
   justify-content: last  baseline;
@@ -70,7 +137,6 @@ color: orange;
   background:darkgray;
   padding: 10px;
   border-radius: 50%;
-
 }
 .social-links .whatsapp{
 background-color: darkgray;
@@ -86,7 +152,6 @@ padding:10px ;
 border-radius:50%;
 }
 
-
  </style>
  <body>
     <div class="box">
@@ -94,7 +159,7 @@ border-radius:50%;
             <li><a href=""> Home</a></li>
             <li><a href=""> Menu</a></li>
             <li><a href=""> Online Order</a></li>
-            <li><a href=""> Team</a></li>
+            <li><a href=""> About Us</a></li>
             <li><a href="">  Contact</a></li>
 
 </ul>
@@ -110,9 +175,14 @@ border-radius:50%;
 </h2>
 <div class="opt">
     <form action="" method="post">
-    <input type="button" value="reserve the table">
+  
+    <!-- HTML !-->
+<button class="button-64" role="button"><span class="text">Book a Table </span></button>
+
     </form>
+  
 </div>
+
 </div>
 <footer>
     <div class="social-links">
@@ -121,9 +191,11 @@ border-radius:50%;
       <a href="https://web.whatsapp.com/yourpage"  target="_blank" class="whatsapp">whatsapp</a>
     </div>
   </footer>
+
   <address class="restaurant-address">
     Visamaentie 23,13100
     Hameenlinna,Finland
+    
   </address>
   </html>
   </html>
